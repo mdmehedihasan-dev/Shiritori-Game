@@ -1,12 +1,53 @@
-# React + Vite
+# Shiritori Game
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A two-player Shiritori word game built with **React** and **Vite**, styled using **Tailwind CSS**.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- 🎮 Two players take turns entering words.
+- ⏱️ 30-second timer per turn.
+- 📝 Words must start with the last letter of the previous word.
+- 📚 Words must be valid English words (checked via dictionary API).
+- 🚫 No repeats, minimum 4 letters per word.
+- 🏆 Scoring based on speed and correctness.
+- 📜 Game rules modal and reset functionality.
+- ⚡ Fast development with Vite and hot module replacement.
 
-## Expanding the ESLint configuration
+## Getting Started
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+### Prerequisites
+
+- [Node.js](https://nodejs.org/) (v16+ recommended)
+- [npm](https://www.npmjs.com/) or [yarn](https://yarnpkg.com/)
+
+### Installation
+
+1. Clone this repository:
+   ```sh
+   git clone <repository-url>
+   cd task
+
+   npm install
+# or
+yarn install 
+
+npm run dev
+# or
+yarn dev
+
+Open http://localhost:5173 in your browser.
+Project Structure
+
+├── public/                # Static assets
+├── src/
+│   ├── assets/            # Images and icons
+│   ├── components/        # React components
+│   │   ├── [GameRulesModal.jsx](http://_vscodecontentref_/0)
+│   │   └── [ShiritoriGame.jsx](http://_vscodecontentref_/1)
+│   ├── [App.jsx](http://_vscodecontentref_/2)            # App entry
+│   ├── [index.css](http://_vscodecontentref_/3)          # Tailwind CSS import
+│   └── [main.jsx](http://_vscodecontentref_/4)           # React DOM render
+├── [index.html](http://_vscodecontentref_/5)
+├── [package.json](http://_vscodecontentref_/6)
+├── [vite.config.js](http://_vscodecontentref_/7)
+└── [README.md](http://_vscodecontentref_/8)
