@@ -13,7 +13,7 @@ const GameRulesModal = ({ isOpen, onClose }) => {
           ×
         </button>
 
-        <h2 className="text-xl font-bold mb-4 text-purple-700">🎯 Game Rules</h2>
+        <h2 className="text-xl font-bold mb-4 text-purple-700"> Game Rules</h2>
         <ul className="text-gray-700 text-sm space-y-2 list-disc pl-4">
           <li>Players take turns entering words</li>
           <li>Each word must start with the last letter of the previous word</li>
