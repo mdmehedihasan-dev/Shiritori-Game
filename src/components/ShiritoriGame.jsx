@@ -134,7 +134,7 @@ const ShiritoriGame = () => {
   };
 
   const showRules = () => {
-    setRulesModalOpen(true); // 👈 
+    setRulesModalOpen(true); 
   };
 
   return (
@@ -243,7 +243,7 @@ const ShiritoriGame = () => {
         </button>
       </div>
 
-      {/* Rules Modal */}
+      {/*=================== Rules Modal ================= */}
       <GameRulesModal isOpen={rulesModalOpen} onClose={() => setRulesModalOpen(false)} />
     </div>
   );
